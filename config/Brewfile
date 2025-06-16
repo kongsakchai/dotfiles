@@ -1,0 +1,21 @@
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+tap "homebrew/core"
+
+brew "chezmoi" # Dotfile manager
+brew "direnv" # Environment variable management
+brew "fd" # Simple file finder
+brew "fnm" # Fast Node.js version manager
+brew "fzf" # Fuzzy finder
+brew "git" # Version control system
+brew "gh" # GitHub CLI
+brew "jq" # JSON processor
+brew "nvim" # Text editor
+brew "openjdk@21" # OpenJDK for Java development
+brew "vim" # Text editor
+
+cask "devtoys" # Developer tools
+cask "mockoon" # Mock API server
+cask "raycast" # Raycast launcher
+cask "warp" # Warp terminal

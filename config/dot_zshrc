@@ -1,0 +1,23 @@
+# Homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Direnv
+eval "$(direnv hook zsh)"
+
+# fzf
+source <(fzf --zsh)
+
+# Workspaces
+export WORKSPACE=$HOME/kong
+source $WORKSPACE/workspaces/.config
+
+
+# Languages
+## Go
+export GOROOT=~/goroot
+export GOPATH=~/go
+export GOBIN=~/go/bin
+export PATH=$PATH:$GOBIN
+
+## JAVA
+alias java21="export JAVA_HOME=/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home ; java -version"
