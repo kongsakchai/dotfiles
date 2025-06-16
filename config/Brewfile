@@ -8,10 +8,12 @@ brew "direnv" # Environment variable management
 brew "fd" # Simple file finder
 brew "fnm" # Fast Node.js version manager
 brew "fzf" # Fuzzy finder
+brew "fish" # Fish shell
 brew "git" # Version control system
 brew "gh" # GitHub CLI
 brew "jq" # JSON processor
 brew "nvim" # Text editor
+brew "openjdk" # OpenJDK for Java development
 brew "openjdk@21" # OpenJDK for Java development
 brew "vim" # Text editor
 
