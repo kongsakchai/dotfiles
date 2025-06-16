@@ -1,0 +1,141 @@
+{
+	"[css]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[dockercompose]": {
+		"editor.defaultFormatter": "redhat.vscode-yaml"
+	},
+	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[java]": {
+		"editor.defaultFormatter": "redhat.java",
+		"editor.formatOnSave": false
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[markdown]": {
+		"editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+		"editor.quickSuggestions": {
+			"comments": true,
+			"other": true,
+			"strings": true
+		},
+		"prettier.tabWidth": 2
+	},
+	"[sql]": {
+		"editor.defaultFormatter": "dbcode.dbcode"
+	},
+	"[svelte]": {
+		"editor.defaultFormatter": "svelte.svelte-vscode"
+	},
+	"[svg]": {
+		"editor.defaultFormatter": "jock.svg"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[yaml]": {
+		"editor.defaultFormatter": "redhat.vscode-yaml"
+	},
+	"containers.containers.label": "Compose Project Name",
+	"dbcode.pagination": true,
+	"diffEditor.ignoreTrimWhitespace": true,
+	"docker.extension.enableComposeLanguageServer": false,
+	"editor.codeActionsOnSave": {
+		"source.organizeImports": "always"
+	},
+	"editor.detectIndentation": false,
+	"editor.fontFamily": "Geist Mono, ui-monospace, Menlo, Monaco, Courier New, monospace, Mali",
+	"editor.fontLigatures": true,
+	"editor.fontSize": 14,
+	"editor.fontWeight": "400",
+	"editor.formatOnSave": true,
+	"editor.largeFileOptimizations": false,
+	"editor.lineHeight": 2,
+	"editor.minimap.enabled": false,
+	"editor.quickSuggestions": {
+		"comments": "on",
+		"other": "on",
+		"strings": "on"
+	},
+	"editor.renderWhitespace": "all",
+	"editor.wordWrap": "on",
+	"explorer.confirmDelete": false,
+	"explorer.confirmDragAndDrop": false,
+	"explorer.fileNesting.patterns": {
+		"*.db": "${capture}.${extname}-*",
+		"*.db3": "${capture}.${extname}-*",
+		"*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+		"*.jsx": "${capture}.js",
+		"*.s3db": "${capture}.${extname}-*",
+		"*.sdb": "${capture}.${extname}-*",
+		"*.sqlite": "${capture}.${extname}-*",
+		"*.sqlite3": "${capture}.${extname}-*",
+		"*.ts": "${capture}.js",
+		"*.tsx": "${capture}.ts",
+		"package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
+		"tsconfig.json": "tsconfig.*.json"
+	},
+	"files.associations": {
+		"*.css": "tailwindcss"
+	},
+	"files.insertFinalNewline": true,
+	"git.openRepositoryInParentFolders": "never",
+	"github.copilot.enable": {
+		"*": true,
+		"plaintext": false,
+		"scminput": false
+	},
+	"gitlens.codeLens.authors.enabled": false,
+	"gitlens.codeLens.enabled": false,
+	"gitlens.graph.layout": "editor",
+	"gitlens.graph.minimap.additionalTypes": [],
+	"gitlens.graph.minimap.enabled": false,
+	"go.buildTags": "test",
+	"go.lintFlags": ["--fast"],
+	"go.lintTool": "golangci-lint",
+	"go.toolsManagement.autoUpdate": true,
+	"java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+	"javascript.inlayHints.parameterNames.enabled": "all",
+	"liveServer.settings.donotShowInfoMsg": true,
+	"markdown-preview-github-styles.colorTheme": "light",
+	"markdownlint.config": {
+		"heading-increment": false,
+		"no-inline-html": false,
+		"single-h1": false,
+		"ul-style": false
+	},
+	"omnisharp.sdkPath": "/usr/local/share/dotnet/dotnet",
+	"prettier.printWidth": 120,
+	"prettier.tabWidth": 4,
+	"prettier.useTabs": true,
+	"redhat.telemetry.enabled": true,
+	"settingsSync.ignoredExtensions": ["ms-vsliveshare.vsliveshare"],
+	"settingsSync.ignoredSettings": ["omnisharp.sdkPath"],
+	"svelte.enable-ts-plugin": true,
+	"svelte.plugin.css.colorPresentations.enable": false,
+	"svelte.plugin.css.documentColors.enable": false,
+	"svelte.plugin.svelte.defaultScriptLanguage": "ts",
+	"svelte.plugin.svelte.format.config.printWidth": 120,
+	"svg.preview.mode": "svg",
+	"tailwindCSS.includeLanguages": {
+		"Svelte": "html"
+	},
+	"terminal.integrated.fontFamily": "Geist Mono, GeistMono Nerd Font, ui-monospace, Menlo, Monaco, Courier New, monospace, Mali",
+	"terminal.integrated.fontSize": 14,
+	"typescript.inlayHints.parameterNames.enabled": "all",
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"window.titleBarStyle": "custom",
+	"workbench.colorTheme": "Catppuccin Mocha",
+	"workbench.editor.enablePreview": true,
+	"workbench.iconTheme": "catppuccin-mocha",
+	"window.zoomLevel": -0.7
+}

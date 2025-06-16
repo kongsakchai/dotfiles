@@ -20,3 +20,7 @@ cask "mockoon" # Mock API server
 cask "obsidian" # Note-taking app
 cask "raycast" # Raycast launcher
 cask "warp" # Warp terminal
+
+cask "font-geist-mono" # Geist Mono font
+cask "font-geist-mono-nerd-font" # JetBrains Mono font
+cask "font-mali"
