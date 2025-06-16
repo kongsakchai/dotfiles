@@ -17,5 +17,6 @@ brew "vim" # Text editor
 
 cask "devtoys" # Developer tools
 cask "mockoon" # Mock API server
+cask "obsidian" # Note-taking app
 cask "raycast" # Raycast launcher
 cask "warp" # Warp terminal
