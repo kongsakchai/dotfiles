@@ -5,3 +5,6 @@ end
 # Workspaces
 set -gx WORKSPACE $HOME/kong
 source $WORKSPACE/workspaces/.config.fish
+
+# fnm
+fnm env --use-on-cd --shell fish | source
