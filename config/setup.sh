@@ -7,9 +7,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 echo "Setup Workspace..."
 
 if [ ! -d ~/kong ]; then
-    mkdir ~/kong
-    mkdir ~/kong/projects
-    mkdir ~/kong/labs
+    mkdir -p ~/kong/projects
+    mkdir -p ~/kong/labs
 else
     echo "Kong directory already exists, skipping creation."
 fi
