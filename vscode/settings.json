@@ -27,8 +27,7 @@
 			"comments": true,
 			"other": true,
 			"strings": true
-		},
-		"prettier.tabWidth": 2
+		}
 	},
 	"[sql]": {
 		"editor.defaultFormatter": "dbcode.dbcode"
@@ -42,17 +41,20 @@
 	"[typescript]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
 	"[yaml]": {
 		"editor.defaultFormatter": "redhat.vscode-yaml"
 	},
 	"containers.containers.label": "Compose Project Name",
+	"dbcode.ai.modelId": "gpt-4o",
 	"dbcode.pagination": true,
 	"diffEditor.ignoreTrimWhitespace": true,
 	"docker.extension.enableComposeLanguageServer": false,
 	"editor.codeActionsOnSave": {
 		"source.organizeImports": "always"
 	},
-	"editor.detectIndentation": false,
 	"editor.fontFamily": "Geist Mono, ui-monospace, Menlo, Monaco, Courier New, monospace, Mali",
 	"editor.fontLigatures": true,
 	"editor.fontSize": 14,
@@ -88,9 +90,11 @@
 		"*.css": "tailwindcss"
 	},
 	"files.insertFinalNewline": true,
+	"geminicodeassist.inlineSuggestions.enableAuto": false,
 	"git.openRepositoryInParentFolders": "never",
 	"github.copilot.enable": {
 		"*": true,
+		"markdown": true,
 		"plaintext": false,
 		"scminput": false
 	},
@@ -100,13 +104,14 @@
 	"gitlens.graph.minimap.additionalTypes": [],
 	"gitlens.graph.minimap.enabled": false,
 	"go.buildTags": "test",
+	"go.goroot": "~/goroot",
 	"go.lintFlags": ["--fast"],
 	"go.lintTool": "golangci-lint",
 	"go.toolsManagement.autoUpdate": true,
+	"hediet.vscode-drawio.resizeImages": null,
 	"java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
 	"javascript.inlayHints.parameterNames.enabled": "all",
 	"liveServer.settings.donotShowInfoMsg": true,
-	"markdown-preview-github-styles.colorTheme": "light",
 	"markdownlint.config": {
 		"heading-increment": false,
 		"no-inline-html": false,
@@ -115,7 +120,6 @@
 	},
 	"omnisharp.sdkPath": "/usr/local/share/dotnet/dotnet",
 	"prettier.printWidth": 120,
-	"prettier.tabWidth": 4,
 	"prettier.useTabs": true,
 	"redhat.telemetry.enabled": true,
 	"settingsSync.ignoredExtensions": ["ms-vsliveshare.vsliveshare"],
@@ -134,8 +138,13 @@
 	"typescript.inlayHints.parameterNames.enabled": "all",
 	"typescript.updateImportsOnFileMove.enabled": "always",
 	"window.titleBarStyle": "custom",
+	"window.zoomLevel": -0.7,
+	"workbench.activityBar.location": "top",
 	"workbench.colorTheme": "Catppuccin Mocha",
 	"workbench.editor.enablePreview": true,
 	"workbench.iconTheme": "catppuccin-mocha",
-	"window.zoomLevel": -0.7
+	"workbench.productIconTheme": "fluent-icons",
+	"prettier.singleQuote": true,
+	"svelte.plugin.svelte.format.config.singleQuote": true,
+	"prettier.bracketSameLine": true
 }
