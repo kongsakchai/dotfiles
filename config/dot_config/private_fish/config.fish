@@ -16,14 +16,24 @@ set -gx WORKSPACE $HOME/kong
 source $WORKSPACE/workspaces/.config.fish
 
 # Languages
-# Go
+## Go
 set -gx GOROOT ~/goroot
 set -gx GOPATH ~/go
 set -gx GOBIN ~/go/bin
 set -gx PATH $PATH $GOROOT/bin $GOBIN
 
-# Java
+## Java
 alias java21="set -gx JAVA_HOME /opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home; java -version"
 
-# Node.js
+## Node.js
 fnm env --use-on-cd --shell fish | source
+
+## bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH
+
+# podman
+set --export DOCKER_HOST unix:///var/folders/vw/45hwmvrn1c3d2y4_7jk63hlm0000gp/T/podman/podman-machine-default-api.sock
+
+# starship
+starship init fish | source

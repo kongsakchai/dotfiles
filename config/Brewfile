@@ -10,7 +10,7 @@ brew "jq" # JSON processor
 brew "nvim" # Text editor
 brew "openjdk" # OpenJDK for Java development
 brew "openjdk@21" # OpenJDK for Java development
-brew "vim" # Text editor
+brew "starship"
 
 cask "devtoys" # Developer tools
 cask "mockoon" # Mock API server
@@ -18,8 +18,9 @@ cask "obsidian" # Note-taking app
 cask "raycast" # Raycast launcher
 cask "shottr" # Screenshot tool
 cask "warp" # Warp terminal
-cask "nikitabobko/tap/aerospace" # Aerospace app
 
-cask "font-geist-mono" # Geist Mono font
-cask "font-geist-mono-nerd-font" # JetBrains Mono font
+cask "font-geist-mono"
+cask "font-geist-mono-nerd-font"
+cask "font-jetbrains-mono"
+cask "font-jetbrains-mono-nerd-font"
 cask "font-mali"

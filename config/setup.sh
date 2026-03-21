@@ -1,8 +1,3 @@
-# Setup Oh My Zsh
-echo "Setup Oh My Zsh..."
-export KEEP_ZSHRC=yes
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
 # Setup Workspace
 echo "Setup Workspace..."
 
