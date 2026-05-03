@@ -1,7 +1,5 @@
-brew "chezmoi" # Dotfile manager
 brew "direnv" # Environment variable management
 brew "fd" # Simple file finder
-brew "fnm" # Fast Node.js version manager
 brew "fzf" # Fuzzy finder
 brew "fish" # Fish shell
 brew "git" # Version control system
@@ -10,7 +8,7 @@ brew "jq" # JSON processor
 brew "nvim" # Text editor
 brew "openjdk" # OpenJDK for Java development
 brew "openjdk@21" # OpenJDK for Java development
-brew "starship"
+brew "make"
 
 cask "devtoys" # Developer tools
 cask "mockoon" # Mock API server
@@ -18,6 +16,7 @@ cask "obsidian" # Note-taking app
 cask "raycast" # Raycast launcher
 cask "shottr" # Screenshot tool
 cask "warp" # Warp terminal
+cask "ghostty" # Ghostty terminal
 
 cask "font-geist-mono"
 cask "font-geist-mono-nerd-font"

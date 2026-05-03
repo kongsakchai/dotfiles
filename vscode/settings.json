@@ -1,4 +1,79 @@
 {
+	// Github
+	"github.copilot.enable": {
+		"*": false,
+		"plaintext": false,
+		"markdown": false,
+		"scminput": false
+	},
+
+	// Editor
+	"editor.fontFamily": "GeistMono Nerd Font, Mali",
+	"editor.fontLigatures": true,
+	"editor.fontSize": 14,
+	"editor.tabSize": 4,
+	"editor.formatOnSave": true,
+	"editor.lineHeight": 1.75,
+	"editor.minimap.enabled": false,
+	"editor.wordWrap": "on",
+	"editor.codeActionsOnSave": {
+		"source.organizeImports": "always"
+	},
+
+	// Window
+	"window.zoomLevel": -0.5,
+
+	// Workbench
+	"workbench.colorTheme": "Catppuccin Macchiato",
+	"workbench.editor.enablePreview": false,
+	"workbench.iconTheme": "catppuccin-macchiato",
+	"workbench.panel.showLabels": false,
+	"workbench.activityBar.location": "bottom",
+
+	// Terminal
+	"terminal.integrated.fontFamily": "GeistMono Nerd Font, Mali",
+	"terminal.integrated.fontSize": 14,
+
+	// File
+	"files.insertFinalNewline": true,
+
+	// Prettier
+	"prettier.printWidth": 120,
+	"prettier.singleQuote": true,
+	"prettier.tabWidth": 4,
+	"prettier.useTabs": true,
+
+	// Diff
+	"diffEditor.ignoreTrimWhitespace": true,
+
+	// Svelte
+	"svelte.enable-ts-plugin": true,
+	"svelte.plugin.svelte.defaultScriptLanguage": "ts",
+	"svelte.plugin.svelte.format.config.printWidth": 120,
+	"svelte.plugin.svelte.format.config.singleQuote": true,
+
+	// Tailwind
+	"tailwindCSS.includeLanguages": {
+		"Svelte": "html"
+	},
+
+	// Golang
+	"go.buildTags": "test,docs",
+	"go.lintFlags": ["--fast"],
+	"go.lintTool": "golangci-lint",
+	"go.toolsManagement.autoUpdate": true,
+
+	// JS/TS
+	"js/ts.inlayHints.parameterNames.enabled": "all",
+
+	// SQL
+	"pgFormatter.keepNewline": true,
+	"pgFormatter.noGrouping": true,
+
+	// TOML
+	"evenBetterToml.formatter.columnWidth": 120,
+
+	// Formatter
 	"[css]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
@@ -9,8 +84,7 @@
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"[java]": {
-		"editor.defaultFormatter": "redhat.java",
-		"editor.formatOnSave": false
+		"editor.defaultFormatter": "redhat.java"
 	},
 	"[javascript]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -23,15 +97,10 @@
 	},
 	"[markdown]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode",
-		"editor.quickSuggestions": {
-			"comments": true,
-			"other": true,
-			"strings": true
-		},
 		"editor.tabSize": 2
 	},
 	"[sql]": {
-		"editor.defaultFormatter": "bradymholt.pgformatter"
+		"editor.defaultFormatter": "ReneSaarsoo.sql-formatter-vsc"
 	},
 	"[svelte]": {
 		"editor.defaultFormatter": "svelte.svelte-vscode"
@@ -47,112 +116,5 @@
 	},
 	"[yaml]": {
 		"editor.defaultFormatter": "redhat.vscode-yaml"
-	},
-	"chat.viewSessions.orientation": "stacked",
-	"containers.containers.label": "Compose Project Name",
-	"customvscodeuicss.css": ".monaco-workbench > *,.monaco-workbench > * {font-family: 'Mali'}",
-	"diffEditor.ignoreTrimWhitespace": true,
-	"docker.extension.enableComposeLanguageServer": false,
-	"editor.accessibilitySupport": "off",
-	"editor.codeActionsOnSave": {
-		"source.organizeImports": "always"
-	},
-	"editor.fontFamily": "GeistMono Nerd Font, ui-monospace, Menlo, Monaco, Courier New, monospace, Mali",
-	"editor.fontLigatures": true,
-	"editor.fontSize": 14,
-	"editor.fontWeight": "400",
-	"editor.formatOnSave": true,
-	"editor.inlineSuggest.edits.allowCodeShifting": "horizontal",
-	"editor.largeFileOptimizations": false,
-	"editor.lineHeight": 1.75,
-	"editor.minimap.enabled": false,
-	"editor.quickSuggestions": {
-		"comments": "on",
-		"other": "on",
-		"strings": "on"
-	},
-	"editor.renderWhitespace": "all",
-	"editor.wordWrap": "on",
-	"emojisense.languages": {
-		"*": true
-	},
-	"evenBetterToml.formatter.columnWidth": 120,
-	"explorer.confirmDelete": false,
-	"explorer.confirmDragAndDrop": false,
-	"explorer.fileNesting.patterns": {
-		"*.db": "${capture}.${extname}-*",
-		"*.db3": "${capture}.${extname}-*",
-		"*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
-		"*.jsx": "${capture}.js",
-		"*.s3db": "${capture}.${extname}-*",
-		"*.sdb": "${capture}.${extname}-*",
-		"*.sqlite": "${capture}.${extname}-*",
-		"*.sqlite3": "${capture}.${extname}-*",
-		"*.ts": "${capture}.js",
-		"*.tsx": "${capture}.ts",
-		"package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
-		"tsconfig.json": "tsconfig.*.json"
-	},
-	"files.associations": {
-		"*.css": "css"
-	},
-	"files.insertFinalNewline": true,
-	"git.openRepositoryInParentFolders": "never",
-	"github.copilot.enable": {
-		"*": false,
-		"go": true,
-		"markdown": true,
-		"php": false,
-		"plaintext": false,
-		"scminput": false,
-		"sql": true,
-		"svelte": true
-	},
-	"github.copilot.nextEditSuggestions.enabled": true,
-	"gitlens.ai.model": "vscode",
-	"gitlens.ai.vscode.model": "copilot:gpt-4.1",
-	"gitlens.codeLens.authors.enabled": false,
-	"gitlens.codeLens.enabled": false,
-	"gitlens.graph.layout": "editor",
-	"gitlens.graph.minimap.additionalTypes": [],
-	"gitlens.graph.minimap.enabled": false,
-	"go.buildTags": "test",
-	"go.lintFlags": ["--fast"],
-	"go.lintTool": "golangci-lint",
-	"go.toolsManagement.autoUpdate": true,
-	"javascript.inlayHints.parameterNames.enabled": "all",
-	"makefile.configureOnOpen": false,
-	"omnisharp.sdkPath": "/usr/local/share/dotnet/dotnet",
-	"pgFormatter.keepNewline": true,
-	"prettier.bracketSameLine": true,
-	"prettier.printWidth": 120,
-	"prettier.singleQuote": true,
-	"prettier.useTabs": true,
-	"redhat.telemetry.enabled": false,
-	"scm.repositories.selectionMode": "single",
-	"settingsSync.ignoredExtensions": ["ms-vsliveshare.vsliveshare"],
-	"settingsSync.ignoredSettings": ["omnisharp.sdkPath"],
-	"svelte.enable-ts-plugin": true,
-	"svelte.plugin.css.colorPresentations.enable": false,
-	"svelte.plugin.css.documentColors.enable": false,
-	"svelte.plugin.svelte.defaultScriptLanguage": "ts",
-	"svelte.plugin.svelte.format.config.printWidth": 120,
-	"svelte.plugin.svelte.format.config.singleQuote": true,
-	"svg.preview.mode": "svg",
-	"tailwindCSS.includeLanguages": {
-		"Svelte": "html"
-	},
-	"terminal.integrated.fontFamily": "GeistMono Nerd Font, ui-monospace, Menlo, Monaco, Courier New, Mali",
-	"terminal.integrated.fontSize": 14,
-	"terminal.integrated.lineHeight": 1.5,
-	"typescript.inlayHints.parameterNames.enabled": "all",
-	"typescript.updateImportsOnFileMove.enabled": "always",
-	"window.titleBarStyle": "custom",
-	"window.zoomLevel": -0.5,
-	"workbench.activityBar.location": "top",
-	"workbench.colorCustomizations": {},
-	"workbench.colorTheme": "Catppuccin Mocha",
-	"workbench.editor.enablePreview": false,
-	"workbench.iconTheme": "material-icon-theme",
-	"workbench.panel.showLabels": false
+	}
 }
