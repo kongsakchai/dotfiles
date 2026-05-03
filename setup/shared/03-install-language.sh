@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if command -v -- fnm &>/dev/null; then
-  echo "🌱 fnm is installed."
+  echo "✅ fnm is installed."
 else
   echo "🚀 installing fnm."
   curl -fsSL https://fnm.vercel.app/install | bash
@@ -9,7 +9,7 @@ else
 fi
 
 if command -v -- go &>/dev/null; then
-  echo "🌱 fnm is installed."
+  echo "✅ go is installed."
 else
   read -p "Go Install URL " url
   echo "🚀 installing go."
@@ -20,7 +20,7 @@ else
 fi
 
 if command -v -- bun &>/dev/null; then
-  echo "🌱 bun is installed."
+  echo "✅ bun is installed."
 else
   echo "🚀 installing bun."
   curl -fsSL https://bun.com/install | bash
