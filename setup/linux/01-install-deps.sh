@@ -8,4 +8,3 @@ sudo apt install -y \
   jq \
   make \
   neovim \
-  openjdk-21-jdk 

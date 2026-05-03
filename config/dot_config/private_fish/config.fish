@@ -2,8 +2,8 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
-# Homebrew
-/opt/homebrew/bin/brew shellenv | source
+# Homebrew (Mac only)
+# /opt/homebrew/bin/brew shellenv | source.
 
 # Direnv
 eval (direnv hook fish)
