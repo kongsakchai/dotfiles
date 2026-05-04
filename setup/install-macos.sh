@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd "$(dirname "${BASH_SOURCE[0]}")"
+
 ./macos/01-install-brew.sh
 
 ./shared/01-install-go.sh
