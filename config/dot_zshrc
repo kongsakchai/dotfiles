@@ -1,39 +1,64 @@
-# Homebrew
+# Workspaces
+export WORKSPACE=$HOME/kong
+source $WORKSPACE/workspaces/.config.zsh
+
+# Languages
+## Go
+export GOROOT=$HOME/goroot
+export GOPATH=$HOME/go
+export GOBIN=$HOME/go/bin
+export PATH=$PATH:$GOROOT/bin:$GOBIN
+
+## Node
+if [ -d "$HOME/.local/share/fnm" ]; then
+  export FNM_PATH="$HOME/.local/share/fnm"
+  export PATH=$FNM_PATH:$PATH
+fi
+
+## Bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH=$BUN_INSTALL/bin:$PATH
+
+# Podman
+export DOCKER_HOST=unix:///var/folders/vw/45hwmvrn1c3d2y4_7jk63hlm0000gp/T/podman/podman-machine-default-api.sock
+
+# Bin
+export PATH=$HOME/bin:$PATH
+
+## nvim
+if [ -d "$HOME/bin/nvim/bin" ]; then
+  export PATH=$HOME/bin/nvim/bin:$PATH
+fi
+
+## fzf
+if [ -d "$HOME/bin/fzf" ]; then
+  export PATH=$HOME/bin/fzf:$PATH
+fi
+
+# Mac only
 if [[ "$(uname)" == "Darwin" ]]; then
-    eval "$(/opt/homebrew/bin/brew shellenv)"
+  eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
 # Direnv
 eval "$(direnv hook zsh)"
 
 # fzf
-source <(fzf --zsh)
+eval "$(fzf --zsh)"
 
-# Workspaces
-export WORKSPACE=$HOME/kong
-source $WORKSPACE/workspaces/.config
-
-# Languages
-## Go
-export GOROOT=~/goroot
-export GOPATH=~/go
-export GOBIN=~/go/bin
-export PATH=$PATH:$GOROOT/bin:$GOBIN
-
-## JAVA
-alias java21="export JAVA_HOME=/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home ; java -version"
-
-## Node.js
-export FNM=$HOME/.local/share/fnm
-export PATH=$PATH:$FNM
+# fnm
 eval "$(fnm env --use-on-cd --shell zsh)"
 
-## bun
-export BUN_INSTALL=$HOME/.bun
-export PATH=$PATH:$BUN_INSTALL/bin
-
-# podman
-export DOCKER_HOST=unix:///var/folders/vw/45hwmvrn1c3d2y4_7jk63hlm0000gp/T/podman/podman-machine-default-api.sock
-
-# starship
+# Starship
 eval "$(starship init zsh)"
+
+# Private config
+if [ -f $HOME/.zshprivate ]; then
+  source $HOME/.zshprivate
+fi
+
+# Functions
+java21() {
+  export JAVA_HOME=/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home
+  java -version
+}
