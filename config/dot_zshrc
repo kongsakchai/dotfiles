@@ -24,6 +24,8 @@ export PATH=$PATH:$GOROOT/bin:$GOBIN
 alias java21="export JAVA_HOME=/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home ; java -version"
 
 ## Node.js
+export FNM=$HOME/.local/share/fnm
+export PATH=$PATH:$FNM
 eval "$(fnm env --use-on-cd --shell zsh)"
 
 ## bun

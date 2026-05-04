@@ -28,11 +28,16 @@ set -gx PATH $PATH $GOROOT/bin $GOBIN
 alias java21="set -gx JAVA_HOME /opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home; java -version"
 
 ## Node.js
+set -gx FNM_PATH "$HOME/.local/share/fnm"
+set -gx PATH $FNM_PATH $PATH
 fnm env --use-on-cd --shell fish | source
 
 ## bun
 set -gx BUN_INSTALL "$HOME/.bun"
 set -gx PATH $BUN_INSTALL/bin $PATH
+
+# BIN
+set -gx PATH ~/bin ~/nvim/bin $PATH
 
 # podman
 set -gx DOCKER_HOST unix:///var/folders/vw/45hwmvrn1c3d2y4_7jk63hlm0000gp/T/podman/podman-machine-default-api.sock

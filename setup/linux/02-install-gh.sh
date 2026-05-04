@@ -15,4 +15,4 @@ else
   	&& sudo apt install gh -y
 
     echo "✅ gh installed!"
-if
+fi

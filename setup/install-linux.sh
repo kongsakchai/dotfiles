@@ -3,6 +3,8 @@
 ./linux/01-install-deps.sh
 ./linux/02-install-gh.sh
 ./linux/03-install-nvim.sh
+./linux/04-install-starship.sh
+./linux/05-install-fzf.sh
 
 ./shared/01-install-go.sh
 ./shared/02-install-bun.sh
