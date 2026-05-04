@@ -24,7 +24,7 @@ else
 
   curl -L $url -o ~/go.tar.gz
   rm -rf ~/goroot && mkdir -p ~/goroot
-  rm -rf /usr/local/go && tar -C ~/goroot -xzf ~/go.tar.gz --strip-components=1 && rm ~/go.tar.gz
+  rm -rf /usr/local/go && tar -C ~/goroot -xzf ~/go.tar.gz --strip-components=1 && rm -rf ~/go.tar.gz
 
   echo "✅ go installed!"
 fi
