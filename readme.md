@@ -16,11 +16,11 @@ chezmoi cd
 
 - Linux
     ```
-    cd setup && ./install-linux.sh
+    ./setup/install-linux.sh
     ```
 - Mac
     ```
-    cd setup && ./install-macos.sh
+    ./setup/install-macos.sh
     ```
 
 ---
@@ -32,13 +32,6 @@ chezmoi cd
 
 **Install Extensions**
 
-- Linux
-
-    ```
-    cat extensions.txt | xargs -L 1 code --install-extension
-    ```
-
-- Windows (PowerShell)
-    ```sh
-    Get-Content extensions.txt | ForEach-Object { code --install-extension $_ }
-    ```
+ ```
+ cat extensions.txt | xargs -L 1 code --install-extension
+ ```
