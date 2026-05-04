@@ -3,7 +3,9 @@ if status is-interactive
 end
 
 # Homebrew (Mac only)
-# /opt/homebrew/bin/brew shellenv | source.
+if test (uname) = "Darwin"
+    /opt/homebrew/bin/brew shellenv | source.
+end
 
 # Direnv
 eval (direnv hook fish)
@@ -29,11 +31,11 @@ alias java21="set -gx JAVA_HOME /opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk
 fnm env --use-on-cd --shell fish | source
 
 ## bun
-set --export BUN_INSTALL "$HOME/.bun"
-set --export PATH $BUN_INSTALL/bin $PATH
+set -gx BUN_INSTALL "$HOME/.bun"
+set -gx PATH $BUN_INSTALL/bin $PATH
 
 # podman
-set --export DOCKER_HOST unix:///var/folders/vw/45hwmvrn1c3d2y4_7jk63hlm0000gp/T/podman/podman-machine-default-api.sock
+set -gx DOCKER_HOST unix:///var/folders/vw/45hwmvrn1c3d2y4_7jk63hlm0000gp/T/podman/podman-machine-default-api.sock
 
 # starship
 starship init fish | source

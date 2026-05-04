@@ -8,7 +8,8 @@ brew "jq" # JSON processor
 brew "nvim" # Text editor
 brew "openjdk" # OpenJDK for Java development
 brew "openjdk@21" # OpenJDK for Java development
-brew "make"
+brew "make" # Tool for run makefile
+brew "starship"
 
 cask "devtoys" # Developer tools
 cask "mockoon" # Mock API server
