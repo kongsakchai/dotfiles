@@ -10,5 +10,8 @@ eval (direnv hook fish)
 # fzf
 fzf --fish | source
 
+# fnm
+fnm env --use-on-cd --shell fish | source
+
 # starship
 starship init fish | source
