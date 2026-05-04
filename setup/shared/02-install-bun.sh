@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Bun
-if [ -d ~/.bun ]; then
+if [ -d $HOME/.bun ]; then
   echo "✅ bun is installed."
 else
   echo "🚀 installing bun."

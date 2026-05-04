@@ -2,7 +2,7 @@
 
 
 # Go
-if [ -d ~/goroot ]; then
+if [ -d $HOME/goroot ]; then
   echo "✅ go is installed."
 else
   # Detect OS
@@ -22,9 +22,9 @@ else
   echo "🔗 URL: $url"
   echo "🚀 installing go..."
 
-  curl -L $url -o ~/go.tar.gz
-  rm -rf ~/goroot && mkdir -p ~/goroot
-  rm -rf /usr/local/go && tar -C ~/goroot -xzf ~/go.tar.gz --strip-components=1 && rm -rf ~/go.tar.gz
+  curl -L $url -o $HOME/go.tar.gz
+  rm -rf $HOME/goroot && mkdir -p $HOME/goroot
+  rm -rf /usr/local/go && tar -C $HOME/goroot -xzf ~/go.tar.gz --strip-components=1 && rm -rf $HOME/go.tar.gz
 
   echo "✅ go installed!"
 fi

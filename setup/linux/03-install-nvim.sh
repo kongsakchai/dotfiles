@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ -d ~/bin/nvim ]; then
+if [ -d $HOME/bin/nvim/bin ]; then
   echo "✅ nvim is installed."
 else
   ARCH=$(uname -m)
@@ -15,9 +15,9 @@ else
   echo "🔗 URL: $url"
   echo "🚀 installing nvim..."
 
-  curl -L $url -o ~/nvim.tar.gz
-  mkdir -p ~/bin/nvim
-  tar -C ~/bin/nvim -xzf ~/nvim.tar.gz --strip-components=1 && rm ~/nvim.tar.gz
+  curl -L $url -o $HOME/nvim.tar.gz
+  mkdir -p $HOME/bin/nvim
+  tar -C $HOME/bin/nvim -xzf $HOME/nvim.tar.gz --strip-components=1 && rm -rf $HOME/nvim.tar.gz
 
   echo "✅ nvim installed!"
 fi

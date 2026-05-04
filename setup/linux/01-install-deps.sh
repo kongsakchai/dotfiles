@@ -1,11 +1,13 @@
 #!/bin/bash
 
-sudo apt install -y \
+sudo apt update && apt install -y \
   direnv \
   fd-find \
   fish \
   git \
   jq \
   make \
-  unzip
+  unzip 
+  
+sudo apt clean
 
