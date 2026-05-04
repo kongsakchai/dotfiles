@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd "$(dirname "${BASH_SOURCE[0]}")"
+
 ./linux/01-install-deps.sh
 ./linux/02-install-gh.sh
 ./linux/03-install-nvim.sh
