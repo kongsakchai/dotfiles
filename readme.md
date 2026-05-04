@@ -8,6 +8,10 @@ use `chezmoi`
 sh -c "$(curl -fsLS git.io/chezmoi)" -- init --apply kongsakchai
 ```
 
+```sh
+export PATH $PATH:$HOME/bin
+```
+
 go to dotfile directory
 
 ```sh
