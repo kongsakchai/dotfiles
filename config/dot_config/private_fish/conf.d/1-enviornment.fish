@@ -31,8 +31,8 @@ if test -d "$HOME/bin/nvim/bin"
 end
 
 ## fzf
-if test -d "$HOME/bin/fzf"
-	set -gx PATH $HOME/bin/fzf $PATH
+if test -d "$HOME/bin/fzf/bin"
+	set -gx PATH $HOME/bin/fzf/bin $PATH
 end
 
 
