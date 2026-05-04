@@ -2,27 +2,35 @@
 
 ## Setup
 
-use `chezmoi`
+### Pre Setup 
+
+Update Packages (Linux only)
+
+```sh
+sudo apt update
+```
+
+### Setup
+
+use `chezmoi` to install and Apply Dotfiles
 
 ```sh
 sh -c "$(curl -fsLS git.io/chezmoi)" -- init --apply kongsakchai
 ```
 
-```sh
-export PATH=$PATH:$HOME/bin
-```
-
-go to dotfile directory
+go to `chezmoi directory`
 
 ```sh
-chezmoi cd
+export PATH=$PATH:$HOME/bin && chezmoi cd
 ```
+
+Install Dependencies
 
 - Linux
     ```
     ./setup/install-linux.sh
     ```
-- Mac
+- MacOS
     ```
     ./setup/install-macos.sh
     ```
@@ -31,10 +39,10 @@ chezmoi cd
 
 ## VSCode
 
-- setting.json
-- extensions.text
+- `settings.json` — VSCode configuration
+- `extensions.txt` — List of all extensions
 
-**Install Extensions**
+**Install All Extensions at Once**
 
  ```
  cat extensions.txt | xargs -L 1 code --install-extension
