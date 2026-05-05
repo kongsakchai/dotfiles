@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt update && apt install -y \
+sudo apt install -y \
   direnv \
   fd-find \
   fish \
