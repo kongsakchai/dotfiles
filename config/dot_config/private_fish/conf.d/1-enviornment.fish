@@ -1,4 +1,6 @@
 # Workspaces
+set -gx MYCONFIG ~/.config/myconfig
+set -gx EDITOR nvim
 set -gx WORKSPACE $HOME/kong
 source $WORKSPACE/workspaces/.config.fish
 
