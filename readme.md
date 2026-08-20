@@ -2,7 +2,7 @@
 
 ## Setup
 
-### Pre Setup 
+### Pre Setup
 
 Update Packages (Linux only)
 
@@ -44,6 +44,6 @@ Install Dependencies
 
 **Install All Extensions at Once**
 
- ```
- cat extensions.txt | xargs -L 1 code --install-extension
- ```
+```
+cat extensions.txt | xargs -L 1 code --install-extension
+```

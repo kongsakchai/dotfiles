@@ -22,10 +22,13 @@ set -gx BUN_INSTALL "$HOME/.bun"
 set -gx PATH $BUN_INSTALL/bin $PATH
 
 # podman
-set -gx DOCKER_HOST unix:///var/folders/vw/45hwmvrn1c3d2y4_7jk63hlm0000gp/T/podman/podman-machine-default-api.sock
+if command -v podman >/dev/null 2>&1
+	set -gx DOCKER_HOST unix:///var/folders/vw/45hwmvrn1c3d2y4_7jk63hlm0000gp/T/podman/podman-machine-default-api.sock
+end
 
-# Bin 
-set -gx PATH $HOME/bin $PATH
+# Bin
+set -gx PATH $HOME/bin $HOME/bin/tools $PATH
+
 
 ## nvim
 if test -d "$HOME/bin/nvim/bin"
@@ -36,5 +39,3 @@ end
 if test -d "$HOME/bin/fzf/bin"
 	set -gx PATH $HOME/bin/fzf/bin $PATH
 end
-
-
