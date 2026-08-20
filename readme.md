@@ -4,6 +4,9 @@
 
 ### Pre Setup
 
+> [!Note]
+> require sudo access to update packages.
+
 Update Packages (Linux only)
 
 ```sh
