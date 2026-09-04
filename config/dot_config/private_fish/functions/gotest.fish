@@ -1,3 +1,3 @@
 function gotest
-    go test "$argv" | colorize
+    go test $argv | colorize
 end
