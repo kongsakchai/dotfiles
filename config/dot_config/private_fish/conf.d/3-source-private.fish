@@ -1,4 +1,4 @@
 # if private.fish exists, source it
-if test -f $HOME/.config/fish/private.fish
-    source $HOME/.config/fish/private.fish
+if test -f $HOME/.private.fish
+    source $HOME/.private.fish
 end
