@@ -19,8 +19,8 @@ set -gx BUN_INSTALL $HOME/.bun
 fish_add_path $BUN_INSTALL/bin
 
 # podman
-if command -v podman >/dev/null 2>&1
-    set -gx DOCKER_HOST unix:///var/folders/vw/45hwmvrn1c3d2y4_7jk63hlm0000gp/T/podman/podman-machine-default-api.sock
+if command -v podman >/dev/null 2>&1; and not command -v docker >/dev/null 2>&1
+    set -gx DOCKER_HOST 
 end
 
 # Bin

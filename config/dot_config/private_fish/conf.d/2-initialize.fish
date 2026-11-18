@@ -17,6 +17,6 @@ fnm env --use-on-cd | source
 starship init fish | source
 
 # podman
-if command -v podman >/dev/null 2>&1
+if command -v podman >/dev/null 2>&1; and not command -v docker >/dev/null 2>&1
 	alias docker="podman"
 end
