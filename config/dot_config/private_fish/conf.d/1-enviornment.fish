@@ -18,10 +18,12 @@ fish_add_path $FNM_PATH
 set -gx BUN_INSTALL $HOME/.bun
 fish_add_path $BUN_INSTALL/bin
 
-# podman
 if command -v podman >/dev/null 2>&1; and not command -v docker >/dev/null 2>&1
     set -gx DOCKER_HOST 
 end
+
+# Docker compose logs helper
+source $HOME/.config/fish/functions/docker-compose-logs.fish
 
 # Bin
 fish_add_path $HOME/bin $HOME/bin/tools
